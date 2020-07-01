@@ -8,7 +8,7 @@
                
             </div>
            
-            <router-link :to="`/article/${article.id}`" class="btn btn-primary">Read More</router-link >
+            <router-link :to="`/article/${article.slug}`" class="btn btn-primary">Read More</router-link >
         </div>
     </div>
 </template>

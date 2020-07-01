@@ -3,7 +3,8 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import Signup from "../views/Signup.vue";
-import Article from "../views/Article.vue"
+import Article from "../views/Article.vue";
+import CreateArticle from '../views/CreateArticle.vue'
 Vue.use(VueRouter);
 
 const routes = [
@@ -32,8 +33,11 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
+    path: "/articles/create",
+    component: CreateArticle
+  },
+  {
     path: "/article/:id",
-    name: "Article",
     component: Article
   },
 ];
